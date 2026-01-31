@@ -20,10 +20,6 @@ const App: React.FC = () => {
             <Logo className="h-6" />
           </div>
           
-          <div className="hidden md:flex items-center space-x-12">
-            <a href="#features" className="text-xs font-mono uppercase tracking-widest text-prgm-muted hover:text-white transition-colors">Modules</a>
-            <a href="#security" className="text-xs font-mono uppercase tracking-widest text-prgm-muted hover:text-white transition-colors">Security</a>
-          </div>
           
           <Button 
             onClick={scrollToWaitlist}

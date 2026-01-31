@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-2">
             <Logo />
             <p className="text-prgm-muted mt-6 max-w-xs leading-relaxed">
-              Architecting the infrastructure for the next generation of autonomous intelligence.
+              Architecting the infrastructure for the next generation of 3D design and visualisation workflows.
             </p>
           </div>
           

@@ -22,32 +22,32 @@ export const Features: React.FC = () => {
   const features = [
     {
       title: "Zero-Knowledge",
-      description: "Architecture guarantees data isolation. Your data stays yours.",
+      description: "Our architecture guarantees data isolation. Your data stays yours.",
       icon: <Lock className="w-5 h-5" />
     },
     {
-      title: "Passive Protocol",
-      description: "Non-intrusive by design. The system activates only upon explicit invocation.",
+      title: "Image Recognition / Replication",
+      description: "Our system is able to recognize images and replicate them in 3D software.",
       icon: <Eye className="w-5 h-5" />
     },
     {
-      title: "Deepdive",
-      description: "Get a Deep dive into the latest news or market",
+      title: "In-Depth Knowledge Base",
+      description: "Our system is trained on a vast amount of data to provide accurate and up-to-date information.",
       icon: <Globe className="w-5 h-5" />
     },
     {
-      title: "Separation",
-      description: "Seperates your home and work life.",
+      title: "Non intrusive Dynamic Work",
+      description: "Our AI works using a dynamic system, utilising placeholders to protect your work.",
       icon: <Shield className="w-5 h-5" />
     },
     {
       title: "Smart Learning",
-      description: "Teach it your shopping and music taste for easy schedules or moods",
+      description: "Our system is able to learn from your interactions and improve its performance and responses over time.",
       icon: <Zap className="w-5 h-5" />
     },
     {
-      title: "Universal SDK",
-      description: "Integration into everything.",
+      title: "Universal Framework",
+      description: "Our software is built on a universal framework, allowing it to be used in a variety of design / visualisation software.",
       icon: <Cpu className="w-5 h-5" />
     }
   ];
@@ -58,10 +58,10 @@ export const Features: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 border-b border-prgm-border pb-8">
           <div className="max-w-xl">
             <h2 className="text-4xl md:text-5xl font-sans font-bold text-white mb-4 tracking-tighter">
-              SYSTEM MODULES
+              CORE MODULES
             </h2>
             <p className="text-prgm-muted font-mono">
-              &gt;&gt; Core capabilities of Zivon AI.
+              &gt;&gt; Core capabilities of GenSYS AI.
             </p>
           </div>
           <div className="font-mono text-xs text-prgm-muted mt-4 md:mt-0">
