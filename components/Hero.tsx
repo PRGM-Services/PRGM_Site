@@ -1,9 +1,9 @@
-import React, { useEffect, useState, useRef } from 'react';
-import { ArrowRight, Terminal } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { ArrowDown, Github, Linkedin, Twitter } from 'lucide-react';
 import { Button } from './Button';
 
 interface HeroProps {
-  onJoinWaitlist: () => void;
+  onScrollToProjects: () => void;
 }
 
 // Hacker text scramble effect
@@ -34,8 +34,9 @@ const useScrambleText = (text: string, speed: number = 50) => {
   return displayedText;
 };
 
-export const Hero: React.FC<HeroProps> = ({ onJoinWaitlist }) => {
-  const headline = useScrambleText("ARCHITECTING INTELLIGENCE");
+export const Hero: React.FC<HeroProps> = ({ onScrollToProjects }) => {
+  const headline = useScrambleText("FULL STACK DEVELOPERS");
+  const subline = useScrambleText("AI & SOFTWARE ENGINEERS");
   
   return (
     <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 min-h-screen flex items-center border-b border-prgm-border">
@@ -46,30 +47,65 @@ export const Hero: React.FC<HeroProps> = ({ onJoinWaitlist }) => {
         <div className="max-w-4xl">
           <div className="inline-flex items-center space-x-2 mb-8 border border-prgm-border px-4 py-2 bg-prgm-dark">
             <span className="w-2 h-2 bg-green-500 animate-pulse"></span>
-            <span className="text-xs font-mono text-prgm-muted uppercase tracking-widest">System Status: Online</span>
+            <span className="text-xs font-mono text-prgm-muted uppercase tracking-widest">Available for hire</span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl lg:text-9xl font-sans font-bold text-white tracking-tighter mb-8 leading-none">
-            PRGM<br />
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-sans font-bold text-white tracking-tighter mb-6 leading-none">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">
               {headline}
             </span>
             <span className="animate-cursor-blink text-white">_</span>
           </h1>
 
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-mono text-prgm-muted mb-8 tracking-tight">
+            {subline}
+            <span className="animate-cursor-blink text-prgm-muted">_</span>
+          </h2>
+
           <p className="text-lg md:text-xl font-mono text-prgm-muted max-w-2xl mb-12 leading-relaxed border-l-2 border-prgm-border pl-6">
-            &gt;&gt; PRGM Services is building the next generation of artificial intelligence. 
-            <br />&gt;&gt; Capable. Independent. Encrypted.
+            &gt;&gt; Building the next generation of AI-powered software.<br/>
+            &gt;&gt; Specializing in software engineering, front end and back end development, and AI.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-start gap-6">
-            <Button size="lg" onClick={onJoinWaitlist} className="group w-full sm:w-auto">
-              [ JOIN_WAITLIST ]
+          <div className="flex flex-col sm:flex-row items-start gap-6 mb-12">
+            <Button size="lg" onClick={onScrollToProjects} className="group w-full sm:w-auto">
+              [ VIEW_PROJECTS ]
+              <ArrowDown className="w-4 h-4 ml-2 group-hover:translate-y-1 transition-transform" />
             </Button>
             <div className="flex items-center gap-4 text-prgm-muted font-mono text-xs h-full py-4">
-              <span>// V.1.0.4</span>
-              <span>// SECURE_ENCLAVE</span>
+              <span>// Based in United Kingdom</span>
+              <span>// Open to remote</span>
             </div>
+          </div>
+
+          {/* Social Links */}
+          <div className="flex items-center gap-6">
+            <a 
+              href="https://github.com/PRGM-Services" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-prgm-muted hover:text-white transition-colors"
+            >
+              <Github className="w-5 h-5" />
+            </a>
+            <a 
+              href="https://www.linkedin.com/company/prgm-services/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-prgm-muted hover:text-white transition-colors"
+            >
+              <Linkedin className="w-5 h-5" />
+            </a>
+            <a 
+              href="https://x.com/prgmservices" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-prgm-muted hover:text-white transition-colors"
+            >
+              <Twitter className="w-5 h-5" />
+            </a>
+            <div className="h-px flex-1 bg-prgm-border max-w-[200px]"></div>
+            <span className="text-xs font-mono text-prgm-muted">info@prgmservices.com</span>
           </div>
         </div>
 
