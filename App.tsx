@@ -78,7 +78,7 @@ const App: React.FC = () => {
               variant="primary"
               size="sm"
             >
-              [ HIRE_ME ]
+              [ HIRE_US ]
             </Button>
           </div>
 
