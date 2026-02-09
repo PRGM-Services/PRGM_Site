@@ -110,7 +110,7 @@ const App: React.FC = () => {
                 size="md"
                 className="w-full mt-4"
               >
-                [ HIRE_ME ]
+                [ HIRE_US ]
               </Button>
             </div>
           </div>
